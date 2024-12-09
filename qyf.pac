@@ -13,7 +13,7 @@ function FindProxyForURL(url, host) {
     for (var i = 0; i < domainsUsingProxy.length; i++) {
         var domain = domainsUsingProxy[i];
         if (host === domain || host.endsWith('.' + domain)) {
-            return true;
+            return direct;
         }
     }
 	
